@@ -1,1 +1,119 @@
-/* место для вашего кода */
+/* ШАПКА */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px 50px;
+  font-size: 18px;
+}
+
+/* контейнер навигации */
+.header__menu {
+}
+
+/* список ссылок */
+.header__links-list {
+  display: flex;
+  gap: 30px;
+  list-style: circle;
+}
+
+/* каждый пункт в списке */
+.header__links-list-item {
+}
+
+/* этот класс может потребоваться, чтобы сделать ссылку без кружочка */
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+/* каждая ссылка в пункте списка */
+.header__link {
+}
+
+/* выбранная ссылка меню (без подчёркивания) */
+.header__link_active {
+}
+
+/* контейнер логотипа */
+.header__logo {
+  display: block;
+}
+
+/* картинка с логотипом */
+.header__logo-image {
+  height: 105px;
+  width: 148px;
+}
+
+/* общий класс для блока с адресом (переиспользуется в шапке и подвале) */
+.address {
+  max-width: 240px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+/* для выравнивания блока с адресом. В футере используется другое выравнивание */
+.header__address {
+}
+
+/* ОБЛОЖКА */
+.cover {
+  background-image: url(../images/cover.jpg);
+  min-height: 757px;
+  color: white;
+  padding: 165px 50px 50px 50px;
+}
+
+/* полупрозрачный блок поверх секции */
+.overlay {
+}
+
+/* заголовок */
+.cover__title {
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: 114.9px;
+}
+
+/* для превращения строк заголовка в блочный элемент */
+.aligned-text {
+  display: block;
+}
+
+/* классы для выравнивания строк текста */
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
+.letter-spacing-extended {
+}
+
+/* класс для обнуления общего межбуквенного расстояния у последней буквы */
+.no-letter-spacing {
+}
+
+/* контейнер для подзаголовка и кнопки */
+.cover__description {
+}
+
+/* текст подзаголовка */
+.cover__description-text {
+}
+
+/* кнопка «Сделать ставку» */
+.bet-button {
+}
