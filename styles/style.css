@@ -14,10 +14,6 @@
   list-style: circle;
 }
 
-/* каждый пункт в списке */
-.header__links-list-item {
-}
-
 /* этот класс может потребоваться, чтобы сделать ссылку без кружочка */
 .header__links-list-item_no-bullit {
   list-style: none;
@@ -60,16 +56,19 @@
   max-width: 240px;
 }
 
-/* ОБЛОЖКА */
+/* === ОБЛОЖКА === */
 .cover {
-  background-image: url(../images/cover.jpg);
-  min-height: 757px;
+  position: relative;
+  background: url(../images/cover.jpg) no-repeat center / cover;
   color: white;
-  padding: 165px 50px 50px 50px;
 }
 
 /* полупрозрачный блок поверх секции */
 .overlay {
+  position: absolute;
+  background: black;
+  inset: 0;
+  opacity: 60%;
 }
 
 /* заголовок */
@@ -77,6 +76,10 @@
   text-transform: uppercase;
   font-size: 100px;
   line-height: 114.9px;
+  padding: 165px 50px 106px;
+  letter-spacing: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 /* для превращения строк заголовка в блочный элемент */
@@ -91,39 +94,165 @@
 
 .aligned-text_center {
   text-align: center;
+  padding-top: 19px;
 }
 
 .aligned-text_right {
   text-align: right;
-}
-
-/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
-.letter-spacing-extended {
+  padding-top: 20px;
 }
 
 /* класс для обнуления общего межбуквенного расстояния у последней буквы */
 .no-letter-spacing {
+  letter-spacing: 0px;
 }
 
 /* контейнер для подзаголовка и кнопки */
 .cover__description {
+  padding: 0px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 /* текст подзаголовка */
 .cover__description-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  word-spacing: 19px;
 }
 
 /* кнопка «Сделать ставку» */
 .bet-button {
+  background: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  border: 1px solid white;
+  padding: 11px 32px 11px 31px;
+}
+
+/* === КАРТОЧКИ === */
+.lots {
+  padding-top: 180px;
+}
+
+/* заголовок секции; */
+.lots__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 64px;
+}
+
+/* список карточек */
+.lots__card-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 27px 0 30px 0;
+}
+
+/* пункт списка карточек */
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  position: relative;
+}
+
+/* ссылка, обрамляющая карточку */
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+/* карточка */
+.card {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* классы для фона каждой из карточек */
+.card_type_film {
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+}
+
+/* заголовок карточки; */
+.card__title {
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+/* текст карточки; */
+.card__text {
+  font-size: 20px;
+}
+
+/* ссылка «Посмотреть больше» */
+.lots__look-more-link {
+  padding-left: 64px;
+  font-size: 20px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+/* === ОБ АУКЦИОНЕ === */
+.about {
+  margin-top: 155px;
+  height: 595px;
+}
+
+/* класс для колонок */
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+}
+
+/* контейнер с логотипом */
+.about__logo {
+}
+
+/* изображение логотипа */
+.about__logo-image {
+}
+
+/* заголовок секции */
+.about__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 100px 0 100px 49px;
+}
+
+/* блок для текстов (параграфов) секции */
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 49px;
 }
 
 /* === ПОДВАЛ === */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 50px 82px 50px;
+  padding: 0 50px 82px;
   font-size: 18px;
-  margin-top: 1404px;
 }
 
 /* список пунктов меню */
