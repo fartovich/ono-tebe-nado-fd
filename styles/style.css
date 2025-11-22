@@ -136,7 +136,7 @@
 
 /* === КАРТОЧКИ === */
 .lots {
-  padding-top: 180px;
+  margin-top: 180px;
 }
 
 /* заголовок секции; */
@@ -149,9 +149,10 @@
 /* список карточек */
 .lots__card-list {
   list-style: none;
+  padding: 27px 24px 30px 24px;
   display: flex;
-  justify-content: space-evenly;
-  padding: 27px 0 30px 0;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 /* пункт списка карточек */
@@ -164,7 +165,6 @@
 /* ссылка, обрамляющая карточку */
 .card-link {
   height: 100%;
-  text-decoration: none;
 }
 
 /* карточка */
@@ -175,6 +175,8 @@
   flex-direction: column;
   position: relative;
   z-index: 1;
+  padding: 48px 40px;
+  justify-content: space-between;
 }
 
 /* классы для фона каждой из карточек */
@@ -195,6 +197,8 @@
   font-size: 22px;
   text-decoration: underline;
   text-transform: uppercase;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 /* текст карточки; */
@@ -213,7 +217,6 @@
 /* === ОБ АУКЦИОНЕ === */
 .about {
   margin-top: 155px;
-  height: 595px;
 }
 
 /* класс для колонок */
@@ -224,10 +227,20 @@
 
 /* контейнер с логотипом */
 .about__logo {
+  background: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 71px;
 }
 
 /* изображение логотипа */
 .about__logo-image {
+  width: 148px;
+  height: 114px;
 }
 
 /* заголовок секции */
@@ -253,6 +266,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 50px 82px;
   font-size: 18px;
+  margin-top: 205px;
 }
 
 /* список пунктов меню */
