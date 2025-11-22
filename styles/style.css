@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 90px 50px 96px 50px;
+  padding: 90px 50px 94px 50px;
   font-size: 18px;
 }
 
@@ -257,7 +257,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-left: 49px;
+  padding: 0 27px 0 49px;
 }
 
 /* === ПОДВАЛ === */
