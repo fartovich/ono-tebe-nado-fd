@@ -64,12 +64,11 @@
   inset: 0;
   background: #000;
   opacity: 60%;
+  z-index: -1;
 }
 
 /* заголовок обложки */
 .cover__title {
-  position: relative;
-  z-index: 1;
   padding: 165px 50px 106px;
   text-transform: uppercase;
   font-size: 100px;
@@ -106,8 +105,6 @@
 .cover__description {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  z-index: 1;
   padding: 0px 50px 50px;
 }
 
@@ -153,7 +150,6 @@
 
 /* пункт списка карточек */
 .lots__card-list-item {
-  position: relative;
   width: 334px;
   min-height: 596px;
 }
