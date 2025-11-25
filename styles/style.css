@@ -56,6 +56,7 @@
   position: relative;
   background: url(../images/cover.jpg) no-repeat center / cover;
   color: #fff;
+  z-index: 1;
 }
 
 /* полупрозрачный блок поверх секции */
